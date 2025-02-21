@@ -36,7 +36,7 @@
         footer { background-color: #f1f1f1; text-align: center; padding: 10px; font-size: 14px; }
         form { max-width: 500px; margin: auto; }
         label { display: block; margin: 10px 0 5px; }
-        input, textarea, input[type="file"] { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        input, textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; }
         button { background-color: #003366; color: white; border: none; padding: 10px 20px; cursor: pointer; }
     </style>
 </head>
@@ -81,25 +81,22 @@
 
 <section id="careers">
     <h2>Careers</h2>
-    <p>At Shui Fund, we are always looking for talented individuals to join our team. If you are passionate about global markets, quantitative research, and innovative investment strategies, we encourage you to apply.</p>
-    <p>Please submit your resume and cover letter through the contact form below. Accepted file types: PDF.</p>
+    <p>At Shui Fund, we are always looking for talented individuals to join our team. If you are passionate about global markets, quantitative research, and innovative investment strategies, we encourage you to express your interest.</p>
+    <p>Please fill out the contact form below and include a brief introduction about yourself (around 100 words). Our team will review your submission and reach out to you if there is a suitable opportunity.</p>
 </section>
 
 <section id="contact">
     <h2>Contact Us</h2>
-    <p>If you have any inquiries, would like to learn more about Shui Fund, or are interested in joining our team, please fill out the form below. Your message and uploaded files will be directed to our team for a prompt response.</p>
-    <form action="https://formspree.io/f/xqaejzqw" method="POST" enctype="multipart/form-data">
+    <p>If you have any inquiries, would like to learn more about Shui Fund, or are interested in joining our team, please fill out the form below. Your message will be directed to our team for a prompt response.</p>
+    <form action="https://formspree.io/f/xqaejzqw" method="POST">
         <label for="name">Name:</label>
         <input type="text" name="name" required>
 
         <label for="email">Email:</label>
         <input type="email" name="email" required>
 
-        <label for="message">Message:</label>
-        <textarea name="message" rows="5" required placeholder="Please include any inquiries or additional details."></textarea>
-
-        <label for="file">Upload Resume/Cover Letter (PDF only):</label>
-        <input type="file" name="file" accept="application/pdf" required>
+        <label for="message">Introduction (100 words):</label>
+        <textarea name="message" rows="5" maxlength="700" required placeholder="Briefly introduce yourself and your interest in Shui Fund."></textarea>
 
         <button type="submit">Send Message</button>
     </form>
